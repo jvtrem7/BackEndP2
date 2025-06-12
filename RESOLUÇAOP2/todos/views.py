@@ -7,3 +7,8 @@ class TodoCreateView(CreateView):
     model = Todo
     fields = ['title','deadline']
     success_url = reverse_lazy('todo_list')
+
+class TodoUpdateView(UpdateView):
+    model = Todo
+    fields = ['title', 'deadline']
+    success_url = reverse_lazy('todo_list')
